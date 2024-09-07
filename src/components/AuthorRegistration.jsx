@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from "react";
 import {
-  createAuthorWork,
   fetchauthorwork,
   withdrawPaper,
 } from "../services/ConferenceServices";
-import { useLoaderData } from "react-router-dom";
 import { getAllConference } from "../services/ConferenceServices";
 import { useNavigate } from "react-router-dom";
 import homeIcon from "../assets/home36.png";
