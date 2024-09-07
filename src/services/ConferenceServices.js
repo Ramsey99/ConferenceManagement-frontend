@@ -316,19 +316,9 @@ export const getTrackWisePaper=(track_id)=>{
   return axios.get(`${REST_API_BASE_URL}/report/gettrackwisepaper/${track_id}`)
 };
 
-/**
- * Fetch paper details by Paper ID
- * @param {string} paperId
- * @returns {Promise}
- */
-export const getAuthorWorkById = (paperId) => {
-  return axios.get(`${API_BASE_URL}/author-work/${paperId}`);
-};
-
 export const fetchTpcMembers = (conference_id) => {
   return axios.get(`${REST_API_BASE_URL}/member/getmembersbycomid/${conference_id}`);
 };
-
 
 // withdraw Paper 
 export const withdrawPaper = (paperId) => {
